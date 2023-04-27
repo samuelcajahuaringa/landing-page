@@ -1,0 +1,270 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../img/travel0.png);
+  background-size: cover;
+  color: #2b2352;
+  font-family: 'Poppins';
+}  
+
+header {
+  width: 100%;
+  height: fit-content;
+}
+
+.nav {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  width: 98vw;
+}
+
+.logo {
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+img {
+  height: 40px;
+  position: relative;
+  top: 5px;
+}
+
+.logo img, .logo h1 {
+  display: inline-block;
+}
+
+.menu {
+  width: 50vw;
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.menu li {
+  display: inline;
+  padding: 30px;
+}
+
+main {
+  width: 100%;
+  height: fit-content;
+}
+
+.landing {
+  margin: 10px 10px 10px 40px;
+  padding: 10px 10px 10px 10px;
+  width: 50vw;
+}
+
+.landing h1 {
+  font-size: 80px;
+  line-height: 0.8;
+}
+
+.landing h2 {
+  font-size: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.text {
+  font-size: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+} 
+
+a:hover {
+  color: hsl(250, 76%, 64%);
+}
+
+span {
+  color: #00FF7F;
+}
+
+.button {
+  font-size: 26px;
+  background-color: #00FF7F;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #00ff88;
+  transform: scale(1.2);
+  color:hsl(250, 76%, 64%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 50px 0 25px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.socialmedia li {
+  justify-content: center;
+  padding: 5px 5px 5px 5px;
+  display: inline;
+}
+
+.short-text {
+  display: none;
+}
+ /* de 0px até 650px */
+@media screen and (max-width:650px) {
+  body {
+    background-image: url(../img/travel1.png);
+    background-size: cover;
+  }
+
+  .logo {
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .logo img, .logo h1 {
+    display: inline;
+  }  
+
+  img {
+    height: 34px;
+    position: relative;
+    top: 6px;
+  }
+  
+  .landing {
+    height: 80vh;
+  }
+
+  .nav {
+    height: 100px;
+  }
+
+  .menu {
+    width: 50vw;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .menu ul {
+    margin-top: 10px;
+  }
+
+  .menu li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .landing h1 {
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .landing h2 {
+    display: none;
+  }
+  
+  .text {
+    display: none;
+  }
+  
+  .short-text {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 651px) and (max-width: 890px){
+  body {
+    background-image: url(../img/travel2.png);
+    background-size: cover;
+  }
+
+  .logo {
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .logo img, .logo h1 {
+    display: inline;
+  }  
+
+  .menu {
+    width: 50vw;
+    font-size: 22px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+  }  
+  
+  .menu ul {
+    margin-top: 10px;
+  }
+
+  .menu li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .landing h1 {
+    font-size: 60px;
+  }
+
+  .landing h2 {
+    font-size: 30px;
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  
+
+}
